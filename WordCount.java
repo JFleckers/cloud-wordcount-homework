@@ -23,8 +23,7 @@ import org.apache.hadoop.util.StringUtils;
 
 public class WordCount {
 
-    public static class TokenizerMapper
-            extends Mapper<Object, Text, Text, IntWritable>{
+    public static class TokenizerMapper extends Mapper<Object, Text, Text, IntWritable>{
 
         static enum CountersEnum { INPUT_WORDS }
 
@@ -98,7 +97,7 @@ public class WordCount {
     }
 
     public static void main(String[] args) throws Exception {
-        long appStart = System.currentTimeMillis();
+        long appStart = System.currentTimeMillis(); //check time at the beginning of the application
         Configuration conf = new Configuration();
         GenericOptionsParser optionParser = new GenericOptionsParser(conf, args);
         String[] remainingArgs = optionParser.getRemainingArgs();
