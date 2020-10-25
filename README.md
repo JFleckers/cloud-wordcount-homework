@@ -1,1 +1,2 @@
 # cloud-wordcount-homework
+For the execution time images, the first time represents the milliseconds it took for the entire application to run, while the second value represents the time in milliseconds it took to complete the job only.
